@@ -1,0 +1,27 @@
+.example {
+    &__title {
+        font-weight: 600;
+
+        &:hover {
+            color: $COLOR;
+
+            &::after {
+                background-color: aqua;
+            }
+        }
+    }
+
+    img {
+        width: 200px;
+        color: $COLOR;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+    }
+
+    &:hover {
+        color: red;
+    }
+}
